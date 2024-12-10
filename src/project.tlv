@@ -45,12 +45,10 @@
    
    
    |calc 
-       @1
+      @1
          $reset = *reset;
          $op[1:0] = *ui_in[5:4];
          $equals_in = *ui_in[7];
-         
-       //@1
          $val1[7:0] = >>1$out[7:0];
          $val2[7:0] = {4'b0, *ui_in[3:0]};
          $sum[7:0] = $val1[7:0] + $val2[7:0];
